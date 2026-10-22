@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>戀上山陽｜岡山・廣島五日遊 旅遊手冊</title>
+<meta name="description" content="01/14–18 山陽五日遊：岡山後樂園、倉敷美觀、尾道、廣島、宮島嚴島神社、岩國錦帶橋。日本精緻小團 24 人成行，周四出發周末請假少兩天。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f1e6; --paper2:#fffdf8; --paper3:#efe7d6; --ink:#1b2430; --soft:#5a5446; --faint:#8c8470;
+  --indigo:#14304a; --deep:#0c2033; --ora:#ee6a0c; --shu:#d8432a; --gold:#b8924a;
+  --line:#ddd2bc; --line2:#e8dfcc; --shadow:0 1px 2px rgba(40,30,10,.06),0 14px 36px rgba(40,30,10,.1);
+  --serif:"Noto Serif TC","Noto Serif JP","Yu Mincho","Songti TC","PMingLiU",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei","Hiragino Sans",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0f1a26; --paper2:#162434; --paper3:#1b2c3f; --ink:#ece4d3; --soft:#bdb39d; --faint:#8d8573;
+    --indigo:#0a1826; --deep:#07111c; --gold:#d3ad66; --line:#2b3d52; --line2:#223347;
+    --shadow:0 1px 2px rgba(0,0,0,.35),0 14px 36px rgba(0,0,0,.45);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0f1a26; --paper2:#162434; --paper3:#1b2c3f; --ink:#ece4d3; --soft:#bdb39d; --faint:#8d8573;
+  --indigo:#0a1826; --deep:#07111c; --gold:#d3ad66; --line:#2b3d52; --line2:#223347;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 14px 36px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:74px;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.85;letter-spacing:.015em;
+  background-image:repeating-linear-gradient(90deg,rgba(120,100,60,.035) 0 1px,transparent 1px 4px)}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ora);outline-offset:3px;border-radius:3px}
+ul,ol{list-style:none}
+.wrap,.sec,.facts{width:min(1160px,calc(100% - 48px));margin-inline:auto}
+
+/* ───── 頂部導覽 ───── */
+.topbar{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 28px;
+  color:#fff;transition:background .35s,box-shadow .35s,color .35s}
+.topbar.solid{background:color-mix(in srgb,var(--paper) 94%,transparent);color:var(--ink);box-shadow:0 1px 0 var(--line);backdrop-filter:blur(8px)}
+.brand{font-family:var(--serif);font-weight:900;font-size:22px;letter-spacing:.14em;text-decoration:none;white-space:nowrap}
+.brand small{font-family:var(--sans);font-weight:500;font-size:12px;letter-spacing:.25em;margin-left:10px;opacity:.8}
+.tabs{display:flex;align-items:center;gap:6px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{font-size:15px;font-weight:500;text-decoration:none;padding:6px 14px;border-radius:999px;white-space:nowrap;letter-spacing:.1em;transition:background .2s,color .2s}
+.tabs a:hover{background:rgba(255,255,255,.18)}
+.topbar.solid .tabs a:hover{background:var(--paper3)}
+.tabs .days{display:flex;gap:2px;margin:0 4px;padding:0 6px;border-inline:1px solid currentColor;border-color:color-mix(in srgb,currentColor 25%,transparent)}
+.tabs .days a{font-family:var(--serif);font-weight:900;padding:6px 11px}
+.tabs .days a.on{background:var(--ora);color:#fff}
+.tabs .cta{background:var(--ora);color:#fff}
+
+/* ───── HERO ───── */
+.hero{position:relative;min-height:min(94vh,860px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(12,32,51,.55) 0%,rgba(12,32,51,.05) 26%,rgba(12,32,51,.55) 62%,rgba(12,32,51,.92) 100%),
+    url(img/hero.jpg) center 40%/cover,url(img/itsukushima.jpg) center 40%/cover;
+  transform:scale(1.04);animation:drift 24s ease-out forwards}
+@keyframes drift{to{transform:scale(1)}}
+.hero-in{position:relative;width:min(1160px,calc(100% - 48px));margin:0 auto;padding:150px 0 92px}
+.eyebrow{font-family:var(--serif);letter-spacing:.5em;font-size:14px;color:#ffe9c4;margin-bottom:10px;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(72px,15vw,188px);line-height:1;letter-spacing:.04em;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.hero h1 i{font-style:normal;color:#ffb199}
+.slogan{margin-top:14px;font-family:var(--serif);font-weight:700;font-size:clamp(19px,3.2vw,32px);letter-spacing:.14em;color:#fff3dc;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.slogan b{background:#fff;color:var(--ora);padding:1px 12px 3px;border-radius:3px;margin-left:4px;text-shadow:none;white-space:nowrap}
+.when{margin-top:26px;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 20px;font-family:var(--serif)}
+.when .d{font-weight:900;font-size:clamp(32px,5vw,54px);letter-spacing:.02em;font-variant-numeric:tabular-nums;text-shadow:0 3px 14px rgba(0,0,0,.6)}
+.when .d em{font-style:normal;color:var(--gold);padding:0 .1em;font-weight:400}
+.when .t{background:var(--ora);padding:2px 14px;border-radius:3px;font-weight:700;letter-spacing:.14em;font-size:19px}
+.when .p{font-size:18px;letter-spacing:.14em;color:#ffe9c4;text-shadow:0 2px 8px rgba(0,0,0,.7)}
+.hits{margin-top:28px;display:flex;flex-wrap:wrap;gap:14px}
+.hit{padding:14px 26px 16px;border-radius:6px;box-shadow:0 12px 30px rgba(0,0,0,.35);min-width:260px}
+.hit.a{background:var(--ora)} .hit.b{background:var(--shu)}
+.hit small{display:block;font-family:var(--serif);letter-spacing:.24em;font-size:15px;opacity:.95}
+.hit strong{font-family:var(--serif);font-weight:900;font-size:36px;line-height:1.2;letter-spacing:.04em}
+.hit strong em{font-style:normal;font-size:1.4em;color:#fff3c9}
+.stamp{position:absolute;right:max(24px,calc((100% - 1160px)/2));top:96px;background:rgba(216,67,42,.92);border:2px solid #fff;padding:8px 16px;border-radius:4px;transform:rotate(4deg);
+  font-family:var(--serif);font-weight:900;font-size:24px;letter-spacing:.14em;box-shadow:0 6px 16px rgba(0,0,0,.35)}
+
+/* ───── 出發資訊條 ───── */
+.facts{position:relative;z-index:3;margin-top:-52px;display:grid;grid-template-columns:repeat(4,1fr);background:var(--indigo);color:#fff;border-radius:8px;box-shadow:var(--shadow)}
+.facts>div{padding:20px 26px 22px;display:flex;flex-direction:column;gap:2px}
+.facts>div+div{border-left:1px solid rgba(255,255,255,.18)}
+.facts small{font-family:var(--serif);letter-spacing:.2em;color:var(--gold);font-size:14px}
+.facts strong{font-family:var(--serif);font-weight:900;font-size:24px;font-variant-numeric:tabular-nums;color:#ffe3a8;line-height:1.35}
+.facts span{font-size:15px;opacity:.9}
+.facts .perk small{background:var(--ora);color:#fff;align-self:flex-start;padding:0 10px;border-radius:3px;letter-spacing:.24em;margin-bottom:4px}
+.facts .perk strong{font-size:20px}
+
+/* ───── 區塊標題 ───── */
+.sec{padding:84px 0 0}
+.sec-h{display:flex;align-items:baseline;gap:20px;margin-bottom:34px;border-bottom:2px solid var(--line);padding-bottom:14px;position:relative}
+.sec-h::after{content:"";position:absolute;left:0;bottom:-2px;width:120px;height:2px;background:var(--shu)}
+.sec-h h2{font-family:var(--serif);font-weight:900;font-size:clamp(32px,5vw,46px);letter-spacing:.24em;color:var(--indigo)}
+:root[data-theme="dark"] .sec-h h2{color:var(--ink)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .sec-h h2{color:var(--ink)}}
+.sec-h .en{font-family:var(--serif);color:var(--gold);letter-spacing:.4em;font-size:13px}
+
+/* ───── 行程一覽 ───── */
+.ov{display:flex;flex-direction:column;gap:16px}
+.ov-row{display:grid;grid-template-columns:128px 1fr;background:var(--paper2);border:1.5px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.ov-day{background:var(--indigo);color:#fff;text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:18px 8px;transition:background .2s}
+.ov-day:hover{background:var(--ora)}
+.ov-day .k{font-family:var(--serif);font-weight:900;letter-spacing:.24em;font-size:14px;color:var(--gold)}
+.ov-day:hover .k{color:#fff}
+.ov-day .n{font-family:var(--serif);font-weight:900;font-size:64px;line-height:1}
+.ov-day .dt{font-size:16px;font-variant-numeric:tabular-nums;display:flex;align-items:center;gap:6px;margin-top:4px}
+.wk{font-style:normal;font-family:var(--serif);font-weight:700;font-size:13px;background:var(--shu);padding:0 8px;border-radius:3px}
+.wk.we{background:var(--ora)}
+.ov-body{padding:20px 28px 20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.ov-body h3{font-family:var(--serif);font-weight:900;font-size:24px;letter-spacing:.06em;line-height:1.4}
+.ov-flight{font-size:16px;font-variant-numeric:tabular-nums;color:var(--indigo);font-weight:700;letter-spacing:.06em}
+:root[data-theme="dark"] .ov-flight{color:#ffe3a8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ov-flight{color:#ffe3a8}}
+.route,.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:4px 2px}
+.route li,.crumbs li{font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.6}
+.route li:not(:last-child)::after,.crumbs li:not(:last-child)::after{content:"➣";color:var(--shu);font-family:var(--sans);font-weight:400;margin:0 8px;font-size:15px}
+.route a,.crumbs a{text-decoration:none;border-bottom:1.5px dotted transparent;transition:color .2s,border-color .2s}
+.route a:hover,.crumbs a:hover{color:var(--shu);border-color:var(--shu)}
+.ov-meals{display:flex;flex-wrap:wrap;gap:8px}
+.m{display:inline-flex;align-items:baseline;gap:8px;background:var(--paper);border-top:2.5px solid var(--indigo);padding:4px 14px 5px;font-size:17px;font-weight:500}
+.m:nth-child(2){border-top-color:var(--shu)} .m:nth-child(3){border-top-color:var(--gold)}
+.m b{font-family:var(--serif);font-weight:900;color:var(--indigo)}
+.m:nth-child(2) b{color:var(--shu)} .m:nth-child(3) b{color:var(--gold)}
+:root[data-theme="dark"] .m b:first-child{color:#9fc1de}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .m:first-child b{color:#9fc1de}}
+.ov-stay{font-size:16.5px;color:var(--soft);border-top:1px dashed var(--line);padding-top:9px}
+.ov-stay b{font-family:var(--serif);color:var(--indigo);letter-spacing:.14em;margin-right:12px}
+:root[data-theme="dark"] .ov-stay b{color:var(--gold)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ov-stay b{color:var(--gold)}}
+
+/* ───── 景點導覽（手冊跨頁） ───── */
+.guide-lead{max-width:640px;color:var(--soft);margin:-8px 0 8px}
+.chapter{padding-top:56px}
+.ch-head{display:flex;align-items:flex-end;gap:28px;padding-bottom:22px;margin-bottom:34px;border-bottom:1.5px solid var(--line);flex-wrap:wrap}
+.ch-num{font-family:var(--serif);font-weight:900;font-size:clamp(86px,14vw,150px);line-height:.8;color:transparent;-webkit-text-stroke:2px var(--indigo);position:relative;padding-right:8px}
+:root[data-theme="dark"] .ch-num{-webkit-text-stroke-color:var(--gold)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ch-num{-webkit-text-stroke-color:var(--gold)}}
+.ch-num span{position:absolute;left:4px;top:-22px;font-size:15px;letter-spacing:.3em;color:var(--shu);-webkit-text-stroke:0}
+.ch-info{flex:1;min-width:260px}
+.ch-date{font-family:var(--serif);font-weight:700;color:var(--gold);letter-spacing:.2em;font-size:16px}
+.ch-info h2{font-family:var(--serif);font-weight:900;font-size:clamp(26px,3.6vw,36px);letter-spacing:.06em;line-height:1.35;margin:2px 0 8px;text-wrap:balance}
+.crumbs li{font-size:17px}
+
+.spots{display:flex;flex-direction:column;gap:56px}
+.spot{display:grid;grid-template-columns:7fr 5fr;gap:44px;align-items:center}
+.spot.flip{grid-template-columns:5fr 7fr}
+.spot.flip .spot-fig{order:2}
+.spot-fig{position:relative;border-radius:6px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;background:var(--paper3);border:8px solid var(--paper2);outline:1px solid var(--line)}
+.spot-fig img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+.spot:hover .spot-fig img{transform:scale(1.04)}
+.spot-fig figcaption{position:absolute;left:0;bottom:0;display:flex;align-items:center;gap:10px;background:var(--indigo);color:#fff;padding:7px 16px 8px 0;font-family:var(--serif);font-weight:700;font-size:15px;letter-spacing:.16em}
+.spot-fig figcaption b{background:var(--ora);padding:7px 12px 8px;margin:-7px 0 -8px;letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.spot-no{font-family:var(--serif);font-weight:900;font-size:15px;letter-spacing:.24em;color:var(--shu);margin-bottom:2px}
+.spot-txt h3{font-family:var(--serif);font-weight:900;font-size:clamp(28px,3.4vw,38px);line-height:1.3;letter-spacing:.06em}
+.jp{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;color:var(--faint);font-family:var(--serif);font-size:16px;letter-spacing:.1em;margin-top:2px}
+.jp span{font-family:var(--sans);font-size:14px;letter-spacing:.06em;padding-left:14px;border-left:1px solid var(--line)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 14px}
+.tags li{font-size:14px;font-weight:700;letter-spacing:.08em;color:var(--shu);border:1.5px solid color-mix(in srgb,var(--shu) 55%,transparent);padding:1px 12px 2px;border-radius:999px}
+.intro{color:var(--soft);font-size:17px;line-height:1.95}
+.feat{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
+.feat h4{font-family:var(--serif);font-size:15px;letter-spacing:.3em;color:var(--gold);margin-bottom:6px}
+.feat li{position:relative;padding-left:22px;font-size:16.5px;line-height:1.75;margin-top:4px}
+.feat li::before{content:"◆";position:absolute;left:0;top:1px;color:var(--ora);font-size:11px;line-height:1.9}
+
+/* ───── 團費 ───── */
+.price{display:grid;grid-template-columns:1fr 280px;background:var(--deep);color:#fff;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.price-l{padding:40px 44px 40px}
+.pk{font-family:var(--serif);letter-spacing:.4em;color:var(--gold);font-size:18px}
+.pv{display:flex;align-items:baseline;gap:10px;margin-top:6px;flex-wrap:wrap}
+.pv .cur{font-family:var(--serif);font-weight:700;font-size:30px;color:#ffe3a8}
+.pv .num{font-family:var(--serif);font-weight:900;font-size:clamp(64px,11vw,112px);line-height:1;font-variant-numeric:tabular-nums}
+.pv .per{font-size:22px;opacity:.85}
+.inc{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.inc li{border:1.5px solid rgba(255,255,255,.4);padding:4px 16px;border-radius:999px;font-size:17px}
+.inc b{color:#ffe3a8}
+.urgent{margin-top:22px;font-family:var(--serif);font-weight:900;font-size:22px;letter-spacing:.3em;color:#ffb199}
+.price-r{background:#fff;display:flex;align-items:center;justify-content:center;padding:24px}
+.price-r img{width:190px}
+.fine{margin-top:16px;color:var(--faint);font-size:14.5px;text-align:center;letter-spacing:.06em}
+
+/* ───── 頁尾 ───── */
+.foot{margin-top:84px;background:var(--indigo);color:#d9d3c2;text-align:center;padding:36px 24px 44px;font-size:14.5px;letter-spacing:.1em}
+.foot details{margin-top:14px;font-size:12.5px;opacity:.75;letter-spacing:.04em}
+.foot summary{cursor:pointer;display:inline-block}
+.foot ul{margin-top:8px;display:grid;gap:2px}
+
+/* ───── 進場動畫 ───── */
+@media (prefers-reduced-motion:no-preference){
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){.hero-bg{animation:none;transform:none}html{scroll-behavior:auto}}
+
+/* ───── 手機 ───── */
+@media (max-width:900px){
+  .facts{grid-template-columns:1fr 1fr}
+  .facts>div:nth-child(3){border-left:0}
+  .facts>div:nth-child(n+3){border-top:1px solid rgba(255,255,255,.18)}
+  .spot,.spot.flip{grid-template-columns:1fr;gap:20px}
+  .spot.flip .spot-fig{order:0}
+  .price{grid-template-columns:1fr}
+  .price-r{padding:18px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap,.sec,.facts,.hero-in{width:calc(100% - 32px)}
+  .topbar{padding:10px 14px;flex-wrap:wrap;gap:6px}
+  .brand small{display:none}
+  .tabs{width:100%}
+  .stamp{top:128px;right:16px;font-size:18px}
+  .hero-in{padding:170px 0 80px}
+  .hit{min-width:0;flex:1 1 100%}
+  .ov-row{grid-template-columns:1fr}
+  .ov-day{flex-direction:row;gap:12px;padding:12px}
+  .ov-day .n{font-size:40px}
+  .ov-body{padding:16px 18px}
+  .ov-body h3{font-size:21px}
+  .route li{font-size:17px}
+  .facts>div{padding:16px 16px 18px}
+  .facts strong{font-size:19px}
+  .spot-fig{border-width:5px}
+  .price-l{padding:28px 22px}
+}
+
+</style>
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top">戀上山陽<small>旅天下</small></a>
+  <nav class="tabs" aria-label="章節">
+    <a href="#overview">行程一覽</a>
+    <span class="days"><a href="#day1" data-nav="1">D1</a><a href="#day2" data-nav="2">D2</a><a href="#day3" data-nav="3">D3</a><a href="#day4" data-nav="4">D4</a><a href="#day5" data-nav="5">D5</a></span>
+    <a href="#price" class="cta">團費</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-bg" role="img" aria-label="嚴島神社海上大鳥居"></div>
+    <div class="hero-in">
+      <p class="eyebrow">SETOUCHI ・ OKAYAMA × HIROSHIMA</p>
+      <h1>戀上<i>山陽</i></h1>
+      <p class="slogan">一座鳥居一海戀，小團慢遊<b>旅天下</b></p>
+      <p class="when"><span class="d">01/14<em>–</em>01/18</span><span class="t">五日遊</span><span class="p">岡山・倉敷・尾道・廣島・宮島</span></p>
+      <div class="hits">
+        <div class="hit a"><small>日本精緻小團</small><strong><em>24</em> 人成行</strong></div>
+        <div class="hit b"><small>周四出發</small><strong>周末請假<em>少兩天</em></strong></div>
+      </div>
+    </div>
+    <span class="stamp">名額有限！</span>
+  </section>
+
+  <section class="facts reveal" aria-label="出發資訊">
+    <div><small>出發</small><strong>01/14（四）</strong><span>01/18（一）返抵</span></div>
+    <div><small>去程 IT214</small><strong>11:10 → 14:35</strong><span>桃園 → 岡山</span></div>
+    <div><small>回程 IT215</small><strong>15:25 → 17:30</strong><span>岡山 → 桃園</span></div>
+    <div class="perk"><small>★ 特別福利</small><strong>托運行李 1 件 20 公斤</strong><span>網卡　每日 2G 流量</span></div>
+  </section>
+
+  <section class="sec" id="overview">
+    <header class="sec-h reveal"><h2>行程一覽</h2><span class="en">ITINERARY</span></header>
+    <div class="ov">
+      <article class="ov-row reveal">
+        <a class="ov-day" href="#day1" aria-label="前往第 1 天景點導覽">
+          <span class="k">DAY</span><span class="n">1</span><span class="dt">01/14<i class="wk">四</i></span>
+        </a>
+        <div class="ov-body">
+          <h3>抵達岡山，初見山陽</h3>
+          <div class="ov-flight">✈ IT214　桃園 11:10 → 岡山 14:35</div>
+          <ul class="route"><li><span>桃園機場</span></li><li><span>岡山機場</span></li><li><a href="#korakuen">岡山後樂園</a></li><li><span>岡山／倉敷</span></li></ul>
+          <div class="ov-meals"><span class="m"><b>午</b>機上餐</span><span class="m"><b>晚</b>岡山風味豬排御膳</span></div>
+          <div class="ov-stay"><b>住宿</b>倉敷國際飯店／倉敷長春藤廣場／岡山華盛頓廣場 或同級</div>
+        </div>
+      </article>
+      <article class="ov-row reveal">
+        <a class="ov-day" href="#day2" aria-label="前往第 2 天景點導覽">
+          <span class="k">DAY</span><span class="n">2</span><span class="dt">01/15<i class="wk">五</i></span>
+        </a>
+        <div class="ov-body">
+          <h3>白壁倉敷、尾道坡道與廣島和平之旅</h3>
+          
+          <ul class="route"><li><a href="#kurashiki">倉敷美觀</a></li><li><a href="#senkoji">尾道・千光寺公園</a></li><li><a href="#dome">原爆圓頂館</a></li><li><a href="#peace">和平紀念公園</a></li><li><a href="#hondori">廣島本通商店街</a></li></ul>
+          <div class="ov-meals"><span class="m"><b>早</b>飯店內用</span><span class="m"><b>午</b>尾道拉麵套餐</span><span class="m"><b>晚</b>廣島燒套餐</span></div>
+          <div class="ov-stay"><b>住宿</b>廣島東急 REI／三井花園飯店廣島／廣島華盛頓飯店 或同級</div>
+        </div>
+      </article>
+      <article class="ov-row reveal">
+        <a class="ov-day" href="#day3" aria-label="前往第 3 天景點導覽">
+          <span class="k">DAY</span><span class="n">3</span><span class="dt">01/16<i class="wk we">六</i></span>
+        </a>
+        <div class="ov-body">
+          <h3>日本三景宮島，再訪岩國名橋</h3>
+          
+          <ul class="route"><li><a href="#itsukushima">宮島・嚴島神社</a></li><li><a href="#kintai">岩國錦帶橋</a></li><li><a href="#kikko">吉香公園</a></li></ul>
+          <div class="ov-meals"><span class="m"><b>早</b>飯店內用</span><span class="m"><b>午</b>宮島名物・牡蠣御膳</span><span class="m"><b>晚</b>日式陶板燒／鍋物御膳</span></div>
+          <div class="ov-stay"><b>住宿</b>廣島東急 REI／三井花園飯店廣島／廣島華盛頓飯店 或同級</div>
+        </div>
+      </article>
+      <article class="ov-row reveal">
+        <a class="ov-day" href="#day4" aria-label="前往第 4 天景點導覽">
+          <span class="k">DAY</span><span class="n">4</span><span class="dt">01/17<i class="wk we">日</i></span>
+        </a>
+        <div class="ov-body">
+          <h3>酒藏、老町並與福山城</h3>
+          
+          <ul class="route"><li><a href="#saijo">西條酒藏通</a></li><li><a href="#takehara">竹原町並保存地區</a></li><li><a href="#fukuyama">福山城</a></li></ul>
+          <div class="ov-meals"><span class="m"><b>早</b>飯店內用</span><span class="m"><b>午</b>日式和食御膳</span><span class="m"><b>晚</b>岡山雞肉御膳</span></div>
+          <div class="ov-stay"><b>住宿</b>倉敷國際飯店／倉敷長春藤廣場／岡山華盛頓廣場 或同級</div>
+        </div>
+      </article>
+      <article class="ov-row reveal">
+        <a class="ov-day" href="#day5" aria-label="前往第 5 天景點導覽">
+          <span class="k">DAY</span><span class="n">5</span><span class="dt">01/18<i class="wk">一</i></span>
+        </a>
+        <div class="ov-body">
+          <h3>吉備津神社，滿載而歸</h3>
+          <div class="ov-flight">✈ IT215　岡山 15:25 → 桃園 17:30</div>
+          <ul class="route"><li><a href="#kibitsu">吉備津神社</a></li><li><a href="#aeon">AEON MALL 岡山</a></li><li><span>岡山機場</span></li><li><span>桃園機場</span></li></ul>
+          <div class="ov-meals"><span class="m"><b>早</b>飯店內用</span><span class="m"><b>午</b>自理</span></div>
+          
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec guide" id="guide">
+    <header class="sec-h reveal"><h2>景點導覽</h2><span class="en">TRAVEL GUIDE</span></header>
+    <p class="guide-lead reveal">把這趟旅程走過的地方，一站一站慢慢介紹給你。點選路線上的站名，可以直接跳到對應的景點。</p>
+    
+    <section class="chapter" id="day1" data-day="1">
+      <header class="ch-head reveal">
+        <div class="ch-num"><span>DAY</span>1</div>
+        <div class="ch-info">
+          <div class="ch-date">01/14（四）</div>
+          <h2>抵達岡山，初見山陽</h2>
+          <ol class="crumbs"><li><span>桃園機場</span></li><li><span>岡山機場</span></li><li><a href="#korakuen">岡山後樂園</a></li><li><span>岡山／倉敷</span></li></ol>
+        </div>
+      </header>
+      <div class="spots">
+        <article class="spot reveal" id="korakuen">
+          <figure class="spot-fig">
+            <img src="img/korakuen.jpg" alt="岡山後樂園" loading="lazy">
+            <figcaption><b>D1-1</b>岡山後樂園</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D1‑1</div>
+            <h3>岡山後樂園</h3>
+            <p class="jp">岡山後楽園<span>岡山縣岡山市</span></p>
+            <ul class="tags"><li>日本三名園</li><li>池泉迴遊式庭園</li></ul>
+            <p class="intro">與金澤兼六園、水戶偕樂園並列為日本三名園。江戶時代由岡山藩主池田綱政下令興建，開園至今已超過三百年。園內以遼闊的草坪、流水與池泉為主軸，遠方的岡山城天守也被巧妙借景入園。</p>
+            <div class="feat"><h4>特色</h4><ul><li>大片草坪與蜿蜒流水交織出的開闊景緻</li><li>池泉迴遊式庭園，沿著園路一步一景</li><li>借景岡山城，遠近層次分明</li></ul></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="chapter" id="day2" data-day="2">
+      <header class="ch-head reveal">
+        <div class="ch-num"><span>DAY</span>2</div>
+        <div class="ch-info">
+          <div class="ch-date">01/15（五）</div>
+          <h2>白壁倉敷、尾道坡道與廣島和平之旅</h2>
+          <ol class="crumbs"><li><a href="#kurashiki">倉敷美觀</a></li><li><a href="#senkoji">尾道・千光寺公園</a></li><li><a href="#dome">原爆圓頂館</a></li><li><a href="#peace">和平紀念公園</a></li><li><a href="#hondori">廣島本通商店街</a></li></ol>
+        </div>
+      </header>
+      <div class="spots">
+        <article class="spot reveal" id="kurashiki">
+          <figure class="spot-fig">
+            <img src="img/kurashiki.jpg" alt="倉敷美觀地區" loading="lazy">
+            <figcaption><b>D2-1</b>倉敷美觀地區</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D2‑1</div>
+            <h3>倉敷美觀地區</h3>
+            <p class="jp">倉敷美観地区<span>岡山縣倉敷市</span></p>
+            <ul class="tags"><li>重要傳統的建造物群保存地區</li><li>白壁町並</li></ul>
+            <p class="intro">江戶時代是幕府直轄的「天領」，因米與棉的集散而繁榮。沿著倉敷川兩岸，白壁土藏與黑瓦町家整齊排列，河畔柳樹垂枝，街區保存得相當完整，運河上還可見遊船緩緩划過。</p>
+            <div class="feat"><h4>特色</h4><ul><li>白壁土藏與柳樹倒映在河面的經典畫面</li><li>保存完整的江戶時代町並</li><li>大原美術館等文化設施坐落於區內</li></ul></div>
+          </div>
+        </article>
+        <article class="spot flip reveal" id="senkoji">
+          <figure class="spot-fig">
+            <img src="img/senkoji.jpg" alt="尾道・千光寺公園" loading="lazy">
+            <figcaption><b>D2-2</b>尾道・千光寺公園</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D2‑2</div>
+            <h3>尾道・千光寺公園</h3>
+            <p class="jp">尾道・千光寺公園<span>廣島縣尾道市</span></p>
+            <ul class="tags"><li>展望名所</li><li>坡道之町</li></ul>
+            <p class="intro">尾道依山面海，沿著斜坡蓋滿了寺院與老屋。千光寺公園位在千光寺山上，登上展望台，尾道水道、對岸的向島與連綿的瀨戶內島嶼盡收眼底，春天更是熱門的賞櫻名所。</p>
+            <div class="feat"><h4>特色</h4><ul><li>俯瞰尾道水道與向島的海峽風景</li><li>沿山坡而建的寺院與老町家</li><li>山麓設有空中纜車通往山頂</li></ul></div>
+          </div>
+        </article>
+        <article class="spot reveal" id="dome">
+          <figure class="spot-fig">
+            <img src="img/dome.jpg" alt="原爆圓頂館" loading="lazy">
+            <figcaption><b>D2-3</b>原爆圓頂館</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D2‑3</div>
+            <h3>原爆圓頂館</h3>
+            <p class="jp">原爆ドーム<span>廣島縣廣島市</span></p>
+            <ul class="tags"><li>世界文化遺產</li><li>和平象徵</li></ul>
+            <p class="intro">前身是 1915 年落成的廣島縣產業獎勵館。1945 年 8 月 6 日，原子彈在其上空爆炸，建築雖嚴重毀損，圓頂鋼架與部分牆體仍被保留下來。1996 年列入世界文化遺產，是向世人傳達和平的重要象徵。</p>
+            <div class="feat"><h4>特色</h4><ul><li>1996 年登錄為世界文化遺產</li><li>完整保存原貌的圓頂鋼架</li><li>靜靜佇立在元安川畔</li></ul></div>
+          </div>
+        </article>
+        <article class="spot flip reveal" id="peace">
+          <figure class="spot-fig">
+            <img src="img/peace.jpg" alt="廣島和平紀念公園" loading="lazy">
+            <figcaption><b>D2-4</b>廣島和平紀念公園</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D2‑4</div>
+            <h3>廣島和平紀念公園</h3>
+            <p class="jp">広島平和記念公園<span>廣島縣廣島市</span></p>
+            <ul class="tags"><li>和平祈願</li><li>紀念公園</li></ul>
+            <p class="intro">位於原爆中心地附近的紀念公園，園內設有原爆死沒者慰靈碑，從拱形碑身望出去，遠處正好能看見原爆圓頂館。公園內另有和平紀念資料館，以資料與遺物訴說當年的歷史。</p>
+            <div class="feat"><h4>特色</h4><ul><li>慰靈碑、和平之火與原爆圓頂館連成一條軸線</li><li>拱形慰靈碑，是公園最具代表性的景色</li><li>和平紀念資料館展示相關資料與遺物</li></ul></div>
+          </div>
+        </article>
+        <article class="spot reveal" id="hondori">
+          <figure class="spot-fig">
+            <img src="img/hondori.jpg" alt="廣島本通商店街" loading="lazy">
+            <figcaption><b>D2-5</b>廣島本通商店街</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D2‑5</div>
+            <h3>廣島本通商店街</h3>
+            <p class="jp">広島本通商店街<span>廣島縣廣島市</span></p>
+            <ul class="tags"><li>拱廊商店街</li><li>逛街散策</li></ul>
+            <p class="intro">廣島市中心最熱鬧的拱廊商店街之一，頂棚遮蔽下晴雨皆宜，服飾、雜貨、藥妝與餐飲店櫛比鱗次，沿途也處處可見廣島東洋鯉魚隊的紅色應援旗幟。</p>
+            <div class="feat"><h4>特色</h4><ul><li>有頂棚的拱廊，下雨也能安心逛</li><li>服飾雜貨藥妝，一條街逛得齊</li><li>滿街紅色的廣島鯉魚隊應援氛圍</li></ul></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="chapter" id="day3" data-day="3">
+      <header class="ch-head reveal">
+        <div class="ch-num"><span>DAY</span>3</div>
+        <div class="ch-info">
+          <div class="ch-date">01/16（六）</div>
+          <h2>日本三景宮島，再訪岩國名橋</h2>
+          <ol class="crumbs"><li><a href="#itsukushima">宮島・嚴島神社</a></li><li><a href="#kintai">岩國錦帶橋</a></li><li><a href="#kikko">吉香公園</a></li></ol>
+        </div>
+      </header>
+      <div class="spots">
+        <article class="spot reveal" id="itsukushima">
+          <figure class="spot-fig">
+            <img src="img/itsukushima.jpg" alt="宮島・嚴島神社" loading="lazy">
+            <figcaption><b>D3-1</b>宮島・嚴島神社</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D3‑1</div>
+            <h3>宮島・嚴島神社</h3>
+            <p class="jp">宮島・厳島神社<span>廣島縣廿日市市</span></p>
+            <ul class="tags"><li>日本三景</li><li>世界文化遺產</li></ul>
+            <p class="intro">宮島是日本三景之一，島上的嚴島神社於 1996 年列入世界文化遺產。神社建在海邊，漲潮時殿舍與朱紅色的大鳥居彷彿漂浮在海面上，退潮時則可以走近鳥居細看它的結構。島上還有悠閒散步的野生鹿。</p>
+            <div class="feat"><h4>特色</h4><ul><li>矗立海中的朱紅大鳥居</li><li>隨潮汐變換面貌的海上神社</li><li>與野生鹿同行的島上漫步</li></ul></div>
+          </div>
+        </article>
+        <article class="spot flip reveal" id="kintai">
+          <figure class="spot-fig">
+            <img src="img/kintai.jpg" alt="岩國錦帶橋" loading="lazy">
+            <figcaption><b>D3-2</b>岩國錦帶橋</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D3‑2</div>
+            <h3>岩國錦帶橋</h3>
+            <p class="jp">岩国・錦帯橋<span>山口縣岩國市</span></p>
+            <ul class="tags"><li>日本三名橋</li><li>木造拱橋</li></ul>
+            <p class="intro">橫跨錦川的五連拱木造橋，江戶時代的 1673 年初建，是日本三名橋之一。現存的橋身於 1953 年重建，優美的弧線倒映在溪面上，是岩國最具代表性的風景。</p>
+            <div class="feat"><h4>特色</h4><ul><li>一座接一座的五連拱橋形</li><li>以木材搭建的傳統橋樑工法</li><li>拱橋倒映溪面的對稱美景</li></ul></div>
+          </div>
+        </article>
+        <article class="spot reveal" id="kikko">
+          <figure class="spot-fig">
+            <img src="img/kikko.jpg" alt="吉香公園" loading="lazy">
+            <figcaption><b>D3-3</b>吉香公園</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D3‑3</div>
+            <h3>吉香公園</h3>
+            <p class="jp">吉香公園<span>山口縣岩國市</span></p>
+            <ul class="tags"><li>舊藩主居館遺址</li><li>賞櫻賞楓</li></ul>
+            <p class="intro">岩國藩主吉川家居館的遺址，公園內保留了護城河與錦雲閣等景點，從錦帶橋步行即可到達。春天賞櫻、秋天賞楓，四季都適合在水岸與林蔭間悠閒散步。</p>
+            <div class="feat"><h4>特色</h4><ul><li>護城河與錦雲閣構成的古城風情</li><li>吉川家居館遺址</li><li>春櫻秋楓皆美，散步步調剛剛好</li></ul></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="chapter" id="day4" data-day="4">
+      <header class="ch-head reveal">
+        <div class="ch-num"><span>DAY</span>4</div>
+        <div class="ch-info">
+          <div class="ch-date">01/17（日）</div>
+          <h2>酒藏、老町並與福山城</h2>
+          <ol class="crumbs"><li><a href="#saijo">西條酒藏通</a></li><li><a href="#takehara">竹原町並保存地區</a></li><li><a href="#fukuyama">福山城</a></li></ol>
+        </div>
+      </header>
+      <div class="spots">
+        <article class="spot reveal" id="saijo">
+          <figure class="spot-fig">
+            <img src="img/saijo.jpg" alt="西條酒藏通" loading="lazy">
+            <figcaption><b>D4-1</b>西條酒藏通</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D4‑1</div>
+            <h3>西條酒藏通</h3>
+            <p class="jp">西条酒蔵通り<span>廣島縣東廣島市</span></p>
+            <ul class="tags"><li>日本三大酒處</li><li>酒藏巡禮</li></ul>
+            <p class="intro">西條與京都伏見、兵庫灘並稱日本三大酒處。酒藏聚集的街區裡，紅磚煙囪與白牆黑瓦的藏屋比鄰而立，不少酒藏門前還會掛上杉玉（酒林），象徵新酒釀成。</p>
+            <div class="feat"><h4>特色</h4><ul><li>酒藏林立的紅磚煙囪街景</li><li>白牆黑瓦的傳統藏屋</li><li>杉玉（酒林），酒藏的象徵標記</li></ul></div>
+          </div>
+        </article>
+        <article class="spot flip reveal" id="takehara">
+          <figure class="spot-fig">
+            <img src="img/takehara.jpg" alt="竹原町並保存地區" loading="lazy">
+            <figcaption><b>D4-2</b>竹原町並保存地區</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D4‑2</div>
+            <h3>竹原町並保存地區</h3>
+            <p class="jp">竹原町並み保存地区<span>廣島縣竹原市</span></p>
+            <ul class="tags"><li>安藝的小京都</li><li>重要傳統的建造物群保存地區</li></ul>
+            <p class="intro">江戶時代靠製鹽與釀酒繁榮的港町，因完整保存了成排的老町家，被譽為「安藝的小京都」。這裡也是竹鶴酒造所在地，威士忌品牌 Nikka 的創辦人竹鶴政孝，就出生在這個酒造世家。</p>
+            <div class="feat"><h4>特色</h4><ul><li>石板街道旁成排的格子窗町家</li><li>竹鶴酒造與 Nikka 創辦人的故鄉</li><li>製鹽、釀酒繁榮時期留下的街景</li></ul></div>
+          </div>
+        </article>
+        <article class="spot reveal" id="fukuyama">
+          <figure class="spot-fig">
+            <img src="img/fukuyama.jpg" alt="福山城" loading="lazy">
+            <figcaption><b>D4-3</b>福山城</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D4‑3</div>
+            <h3>福山城</h3>
+            <p class="jp">福山城<span>廣島縣福山市</span></p>
+            <ul class="tags"><li>城郭</li><li>國家重要文化財</li></ul>
+            <p class="intro">1622 年由初代藩主水野勝成築成的平城，緊鄰福山車站。現存的伏見櫓為國家重要文化財，相傳是從伏見城遷建而來；天守則為戰後重建，是福山市街的地標。</p>
+            <div class="feat"><h4>特色</h4><ul><li>緊鄰福山車站，交通便利</li><li>伏見櫓為國家重要文化財</li><li>初代藩主水野勝成所築之城</li></ul></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="chapter" id="day5" data-day="5">
+      <header class="ch-head reveal">
+        <div class="ch-num"><span>DAY</span>5</div>
+        <div class="ch-info">
+          <div class="ch-date">01/18（一）</div>
+          <h2>吉備津神社，滿載而歸</h2>
+          <ol class="crumbs"><li><a href="#kibitsu">吉備津神社</a></li><li><a href="#aeon">AEON MALL 岡山</a></li><li><span>岡山機場</span></li><li><span>桃園機場</span></li></ol>
+        </div>
+      </header>
+      <div class="spots">
+        <article class="spot reveal" id="kibitsu">
+          <figure class="spot-fig">
+            <img src="img/kibitsu.jpg" alt="吉備津神社" loading="lazy">
+            <figcaption><b>D5-1</b>吉備津神社</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D5‑1</div>
+            <h3>吉備津神社</h3>
+            <p class="jp">吉備津神社<span>岡山縣岡山市</span></p>
+            <ul class="tags"><li>國寶</li><li>桃太郎傳說</li></ul>
+            <p class="intro">祭祀吉備津彥命，被認為是桃太郎傳說的原型之一。本殿與拜殿為國寶，獨特的「比翼入母屋造」屋頂又稱吉備津造，全國僅此一例；長約 360 公尺的迴廊沿著山坡蜿蜒，是另一個看點。</p>
+            <div class="feat"><h4>特色</h4><ul><li>國寶本殿，造型罕見的比翼入母屋造</li><li>約 360 公尺、蜿蜒的長迴廊</li><li>桃太郎傳說的故事舞台</li></ul></div>
+          </div>
+        </article>
+        <article class="spot flip reveal" id="aeon">
+          <figure class="spot-fig">
+            <img src="img/aeon.jpg" alt="AEON MALL 岡山" loading="lazy">
+            <figcaption><b>D5-2</b>AEON MALL 岡山</figcaption>
+          </figure>
+          <div class="spot-txt">
+            <div class="spot-no">D5‑2</div>
+            <h3>AEON MALL 岡山</h3>
+            <p class="jp">イオンモール岡山<span>岡山縣岡山市</span></p>
+            <ul class="tags"><li>大型購物中心</li><li>回程採買</li></ul>
+            <p class="intro">鄰近 JR 岡山站的大型購物中心，賣場、餐廳與日用品集中在同一處，返程前可以在這裡輕鬆補齊伴手禮與日用品。</p>
+            <div class="feat"><h4>特色</h4><ul><li>靠近岡山站，交通方便</li><li>一站買齊伴手禮與日用品</li><li>上機前的最後採買時光</li></ul></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </section>
+
+  <section class="sec" id="price">
+    <div class="price reveal">
+      <div class="price-l">
+        <p class="pk">團　費</p>
+        <p class="pv"><span class="cur">NT$</span><span class="num">43,000</span><span class="per">／人</span></p>
+        <ul class="inc"><li><b>含</b> 接送</li><li><b>含</b> 小費</li><li><b>含</b> 2G 網卡</li><li><b>含</b> 行李 20KG</li></ul>
+        <p class="urgent">名額有限　欲報從速</p>
+      </div>
+      <div class="price-r"><img src="img/logo.png" alt="Uni 旅天下"></div>
+    </div>
+    <p class="fine">行程順序依當地交通與天候得調整，飯店以「同級」為原則，實際以確認為準。</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>戀上山陽｜岡山・廣島五日遊　01/14–01/18　旅天下</p>
+  <details><summary>圖片來源</summary><ul><li>尾道・千光寺公園：そらみみ／CC BY-SA 4.0（Wikimedia Commons）</li><li>原爆圓頂館：DXR／CC BY-SA 4.0（Wikimedia Commons）</li><li>廣島和平紀念公園：TimMilesWright／CC0（Wikimedia Commons）</li><li>廣島本通商店街：Aude／CC BY-SA 3.0（Wikimedia Commons）</li><li>西條酒藏通：東広島市／CC BY-SA 4.0（Wikimedia Commons）</li><li>福山城：日:Jnn／CC BY 2.1 jp（Wikimedia Commons）</li><li>吉備津神社：663highland／CC BY-SA 4.0（Wikimedia Commons）</li><li>吉香公園：そらみみ／CC BY-SA 4.0（Wikimedia Commons）</li><li>AEON MALL 岡山：ラハール／CC BY-SA 4.0（Wikimedia Commons）</li></ul></details>
+</footer>
+
+<script>
+(function () {
+  var topbar = document.getElementById('topbar');
+  var hero = document.querySelector('.hero');
+  function onScroll() {
+    var limit = hero ? hero.offsetHeight - 120 : 200;
+    topbar.classList.toggle('solid', window.scrollY > limit);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // 章節書籤：捲動時亮起目前所在的天數
+  var links = {};
+  [].forEach.call(document.querySelectorAll('[data-nav]'), function (a) { links[a.getAttribute('data-nav')] = a; });
+  if ('IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        Object.keys(links).forEach(function (k) { links[k].classList.remove('on'); });
+        var a = links[e.target.getAttribute('data-day')];
+        if (a) a.classList.add('on');
+      });
+    }, { rootMargin: '-35% 0px -55% 0px' });
+    [].forEach.call(document.querySelectorAll('.chapter'), function (c) { spy.observe(c); });
+
+    // 進場動畫
+    var items = [].slice.call(document.querySelectorAll('.reveal'));
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    [].forEach.call(document.querySelectorAll('.reveal'), function (el) { el.classList.add('in'); });
+  }
+})();
+
+</script>
+</body>
+</html>
