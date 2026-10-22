@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#fbf3e4; --paper2:#fffaf0; --paper3:#f3e8d2; --ink:#1c2530; --soft:#575043; --faint:#8c8470;
+  --paper:#f7f3ea; --paper2:#fffdf8; --paper3:#efe8d8; --ink:#1c2530; --soft:#575043; --faint:#8c8470;
   --indigo:#17365a; --deep:#0f2742; --ora:#ee6a0c; --shu:#d8392b; --gold:#c9993f; --sea:#4a86b5;
   --line:#e0d2b4;
   --serif:"Noto Serif TC","Noto Serif JP","Yu Mincho","Songti TC","PMingLiU",serif;
@@ -259,6 +259,24 @@ ul,ol{list-style:none}
   .spot-fig figcaption{font-size:14px;bottom:14px}
 }
 
+/* ───── 簡化層：去掉底紋與雜訊，只留紙色底、靛藍色帶、朱紅重點 ───── */
+body{background-image:none}
+.band,.price-band{background:linear-gradient(180deg,var(--indigo) 0%,var(--deep) 100%)}
+.spot::before,.spot.flip::before{display:none}
+.pet{display:none}
+.sec-h::before{display:none}
+.sec-h::after{height:1px;background:var(--line);min-width:40px}
+.ov-row,.ch-head{background:none;border-bottom:1px solid var(--line)}
+.ov-row:last-child{border-bottom:0}
+.feat{background:none;border-top:1px solid var(--line);padding-top:12px}
+.feat li::before{width:7px;height:7px;background:var(--shu);border-radius:50%;top:12px;left:8px}
+.ov-day,.ch-num{box-shadow:0 10px 22px rgba(216,57,43,.22)}
+.facts>div{background:none}
+.facts>div+div{border-left:1px solid rgba(255,255,255,.16)}
+.spots{gap:84px}
+.intro{max-width:34em}
+@media (max-width:900px){.facts>div:nth-child(3){border-left:0}}
+
 </style>
 </head>
 <body>
@@ -321,7 +339,7 @@ ul,ol{list-style:none}
         <div class="ov-body">
           <h3>白壁倉敷、尾道坡道與廣島和平之旅</h3>
           
-          <ul class="route"><li><a href="#kurashiki">倉敷美觀</a></li><li><a href="#senkoji">尾道・千光寺公園</a></li><li><a href="#dome">原爆圓頂館</a></li><li><a href="#peace">和平紀念公園</a></li><li><a href="#hondori">廣島本通商店街</a></li></ul>
+          <ul class="route"><li><a href="#kurashiki">倉敷美觀</a></li><li><a href="#senkoji">尾道・千光寺公園（山纜車單程）</a></li><li><a href="#dome">原爆圓頂館</a></li><li><a href="#peace">和平紀念公園</a></li><li><a href="#hondori">廣島本通商店街</a></li></ul>
           <div class="ov-meals"><span class="m"><b>早</b>飯店內用</span><span class="m"><b>午</b>尾道拉麵套餐</span><span class="m"><b>晚</b>廣島燒套餐</span></div>
           <div class="ov-stay"><b>住宿</b>廣島東急 REI／三井花園飯店廣島／廣島華盛頓飯店 或同級</div>
         </div>
@@ -401,7 +419,7 @@ ul,ol{list-style:none}
         <div class="ch-info">
           <div class="ch-date">01/15（五）</div>
           <h2>白壁倉敷、尾道坡道與廣島和平之旅</h2>
-          <ol class="crumbs"><li><a href="#kurashiki">倉敷美觀</a></li><li><a href="#senkoji">尾道・千光寺公園</a></li><li><a href="#dome">原爆圓頂館</a></li><li><a href="#peace">和平紀念公園</a></li><li><a href="#hondori">廣島本通商店街</a></li></ol>
+          <ol class="crumbs"><li><a href="#kurashiki">倉敷美觀</a></li><li><a href="#senkoji">尾道・千光寺公園（山纜車單程）</a></li><li><a href="#dome">原爆圓頂館</a></li><li><a href="#peace">和平紀念公園</a></li><li><a href="#hondori">廣島本通商店街</a></li></ol>
         </div>
       </header>
       <div class="spots">
@@ -430,7 +448,7 @@ ul,ol{list-style:none}
             <p class="jp">尾道・千光寺公園<span>廣島縣尾道市</span></p>
             <ul class="tags"><li>展望名所</li><li>坡道之町</li></ul>
             <p class="intro">尾道依山面海，沿著斜坡蓋滿了寺院與老屋。千光寺公園位在千光寺山上，登上展望台，尾道水道、對岸的向島與連綿的瀨戶內島嶼盡收眼底，冬季空氣清澈，視野格外遼闊。</p>
-            <div class="feat"><h4>特色</h4><ul><li>俯瞰尾道水道與向島的海峽風景</li><li>沿山坡而建的寺院與老町家</li><li>山麓設有空中纜車通往山頂</li></ul></div>
+            <div class="feat"><h4>特色</h4><ul><li>俯瞰尾道水道與向島的海峽風景</li><li>沿山坡而建的寺院與老町家</li><li>搭乘千光寺山纜車（單程）輕鬆上山，沿途俯瞰市街</li></ul></div>
           </div>
         </article>
         <article class="spot reveal" id="dome">
